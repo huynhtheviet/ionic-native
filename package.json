@@ -89,6 +89,7 @@
     }
   },
   "dependencies": {
+    "@ionic-native/core": "^5.22.0",
     "tslib": "1.10.0"
   }
 }
