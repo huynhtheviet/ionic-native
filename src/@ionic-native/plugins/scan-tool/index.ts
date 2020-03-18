@@ -174,4 +174,24 @@ export class ScanTool extends IonicNativePlugin {
   isConnected(deviceId: string): Promise<any> {
     return;
   }
+
+  /**
+   * Report if bluetooth is enabled.
+   *
+   * @returns {Promise<void>} Returns a Promise that resolves if Bluetooth is enabled, and rejects if disabled.
+   */
+  @Cordova()
+  isEnabled(): Promise<void> {
+    return;
+  }
+
+  /**
+   * Enable Bluetooth on the device (Android only).
+   *
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  enable(): Promise<any> {
+    return;
+  }
 }
