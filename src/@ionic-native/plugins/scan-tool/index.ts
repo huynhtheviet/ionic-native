@@ -10,7 +10,7 @@
  *
  */
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, CordovaProperty, CordovaInstance, InstanceProperty, IonicNativePlugin } from '@ionic-native/core';
+import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
 import { Observable } from 'rxjs';
 
 /**
@@ -129,35 +129,6 @@ export class ScanTool extends IonicNativePlugin {
   }
 
   /**
-   * Tool link.
-   * @usage
-   * ```
-   *   ScanTool.toolLink('12:34:56:78:9A:BC').then(() => {
-   *     console.log('Disconnected');
-   *   });
-   * ```
-   * @param {string} deviceId  UUID or MAC address of the peripheral
-   * @return {Promise<any>} Returns a Promise
-   */
-  @Cordova()
-  toolLink(deviceId: string): Promise<any> {
-    return;
-  }
-
-  /**
-   * Read the vehicle data.
-   *
-   * @param {string} deviceId  UUID or MAC address of the peripheral
-   * @return {Promise<any>} Returns a Promise
-   */
-  @Cordova()
-  readVehicleData(
-    deviceId: string
-  ): Promise<any> {
-    return;
-  }
-
-  /**
    * Report the connection status.
    *
    * @usage
@@ -192,6 +163,191 @@ export class ScanTool extends IonicNativePlugin {
    */
   @Cordova()
   enable(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Tool link.
+   * @usage
+   * ```
+   *   ScanTool.toolLink().then(() => {
+   *     console.log('Tool Linked');
+   *   });
+   * ```
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  toolLink(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Get VIN
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getVIN(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Enable JSON Support
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  enableJSONSupport(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Disable JSON Support
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  disableJSONSupport(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Get Mileage
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getMileage(): Promise<number> {
+    return;
+  }
+
+  /**
+   * Get VIN Profile
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getVinProfile(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Get Battery Status
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getBatteryStatus(): Promise<number> {
+    return;
+  }
+
+  /**
+   * Get Battery Voltage
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getBatteryVoltage(): Promise<number> {
+    return;
+  }
+
+  /**
+   * Get Monitor Status
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getMonitorStatus(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Get Freeze Frame
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getFreezeFrame(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Get ECM DTCs
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getECMDTCs(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Get TCM DTCs
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getTCMDTCs(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Get OEM Module Supported
+   *
+   * @return {Promise<any[]>} Returns a Promise
+   */
+  @Cordova()
+  getOEMModuleSupported(): Promise<any[]> {
+    return;
+  }
+
+  /**
+   * Get OEM Module DTCs
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getOEMModuleDTCs(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Get Tool Setting
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  getToolSetting(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Get Device Id
+   *
+   * @return {Promise<string>} Returns a Promise
+   */
+  @Cordova()
+  getDeviceId(): Promise<string> {
+    return;
+  }
+
+  /**
+   * Get Product Id
+   *
+   * @return {Promise<number>} Returns a Promise
+   */
+  @Cordova()
+  getProductId(): Promise<number> {
+    return;
+  }
+
+  /**
+   * Set VIN
+   *
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  setVIN(vin: string): Promise<any> {
     return;
   }
 }
