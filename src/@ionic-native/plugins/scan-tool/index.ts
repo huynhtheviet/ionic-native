@@ -307,7 +307,7 @@ export class ScanTool extends IonicNativePlugin {
    * @return {Promise<any>} Returns a Promise
    */
   @Cordova()
-  getOEMModuleDTCs(): Promise<any> {
+  getOEMModuleDTCs(system: number, subSystem: number): Promise<any> {
     return;
   }
 
